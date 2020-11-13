@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: .card-text
+- text: '[text="Lenin cat"]'
+- text: .lenin-cat
+- text: .lenin_cat
+- text: .card-text.lenin-cat
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

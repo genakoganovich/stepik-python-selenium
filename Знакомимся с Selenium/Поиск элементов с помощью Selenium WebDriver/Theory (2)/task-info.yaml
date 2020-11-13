@@ -1,0 +1,41 @@
+type: theory
+custom_name: Theory
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+- name: lesson6_step4.py
+  visible: true
+  learner_created: true
+- name: lesson6_step5.py
+  visible: true
+  learner_created: true
+- name: lesson6_step7.py
+  visible: true
+  learner_created: true
+- name: lesson6_step8.py
+  visible: true
+  learner_created: true
+- name: lesson6_step10.py
+  visible: true
+  learner_created: true
+- name: lesson6_step11.py
+  visible: true
+  learner_created: true
+- name: lesson6_step11_check1.py
+  visible: true
+  learner_created: true
+- name: lesson6_step11_check2.py
+  visible: true
+  learner_created: true
+- name: lesson6_step11_check3.py
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  time: Tue, 10 Nov 2020 16:43:45 UTC
+record: -1
+post_submission_on_open: true

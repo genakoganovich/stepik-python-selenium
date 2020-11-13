@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: перейти на страницу логина
+- text: 'проверить, что есть сообщение об успешном добавлении в корзину '
+- text: 'написать отзыв '
+- text: 'поменять язык интерфейса '
+- text: перейти на страницу товара
+- text: добавить в корзину товар с определенным названием
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

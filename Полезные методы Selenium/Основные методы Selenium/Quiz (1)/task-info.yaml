@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Этот элемент допускает несколько выбранных значений
+- text: Это checkbox
+- text: Это radiobutton
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

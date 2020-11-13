@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: git push
+- text: git commit
+- text: git clone
+- text: git add
+- text: git status
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

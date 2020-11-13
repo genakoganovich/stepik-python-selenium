@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: p:nth-child(3)
+- text: '[data-name="Vladimir"]'
+- text: .card-body:nth-child(3) p
+- text: .col-sm-4:nth-child(3) p
+- text: '[name="Vladimir"]'
+- text: '#politic'
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

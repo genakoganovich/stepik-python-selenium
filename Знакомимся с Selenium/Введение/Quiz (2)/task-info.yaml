@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Selenium - проект с открытым исходным кодом
+- text: 'Selenium Webdriver - это специальный язык программирования для написания
+    автотестов '
+- text: 'С помощью Selenium можно писать автотесты на языке C# '
+- text: В большинстве случаев одни и те же тесты можно запускать на разных браузерах
+- text: Selenium Webdriver позволяет многим языкам программирования взаимодействовать
+    с многими браузерами
+- text: ChromeDriver разработан компанией Mozilla
+- text: Selenium Webdriver работает только с браузером Firefox
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz

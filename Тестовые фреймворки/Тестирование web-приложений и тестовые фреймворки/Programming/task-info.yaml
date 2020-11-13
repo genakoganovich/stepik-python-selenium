@@ -1,0 +1,10 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    def test_input_text(expected_result, actual_result):
+        # ваша реализация, напишите assert и сообщение об ошибке
+  learner_created: false
+status: Unchecked
+record: -1

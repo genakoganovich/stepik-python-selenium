@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Можно использовать Selenium Webdriver, вызывая методы соответствующей библиотеки
+    на языке Java
+- text: 'Selenium Webdriver позволяет "записать" ручные действия пользователя и превратить
+    их в код автотеста '
+- text: Писать автотесты с помощью Selenium можно только на языке Python
+- text: Драйвер для каждого браузера нужно реализовывать самостоятельно тому, кто
+    пишет автотесты
+- text: ChromeDriver позволяет манипулировать браузером Firefox
+- text: Благодаря универсальности интерфейса можно скопировать тесты на Python, вставить
+    их в проект на Java, и они заработают!
+- text: ChromeDriver поддерживается разработчиками проекта Chromium
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz

@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: как получать значения атрибутов html-элементов
+- text: работа с отчётами для упавших автотестов
+- text: настройка запуска определенного набора тестов
+- text: переключение между окнами браузера
+- text: 'работа с явными и неявными ожиданиями '
+- text: 'работа с выпадающими списками '
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

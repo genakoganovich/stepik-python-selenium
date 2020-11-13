@@ -1,0 +1,15 @@
+type: stepik
+title: Автоматизация тестирования с помощью Selenium и Python
+language: Russian
+summary: Это базовый курс для начинающих тестировщиков, который научит вас писать
+  автоматизированные UI-тесты на языке программирования Python с помощью библиотеки
+  Selenium. А еще мы рассмотрим популярные фреймворки и хорошие практики написания
+  автотестов.
+programming_language: Python
+programming_language_version: 3.x
+content:
+- Знакомимся с Selenium
+- Полезные методы Selenium
+- Тестовые фреймворки
+- Применение паттерна Page Object Model
+mode: Study

@@ -1,0 +1,27 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Windows 7
+- text: Windows 8
+- text: Windows 10
+- text: Ubuntu 16
+- text: Ubuntu 18
+- text: Ubuntu 19.04
+- text: 'Mac OS '
+- text: Linux Mint
+- text: Debian
+- text: elementary OS
+- text: Fedora
+- text: Manjaro Linux
+- text: свой вариант в комментариях
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Solved
+record: -1

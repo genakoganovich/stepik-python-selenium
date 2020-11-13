@@ -1,0 +1,24 @@
+<html>
+ <head></head>
+ <body>
+  <h2>Задание: составные сообщения об ошибках и поиск подстроки</h2> 
+  <p>Иногда при работе с текстами не нужны жёсткие проверки на полное совпадение,&nbsp;и требуется проверить, что некий текст является подстрокой другого текста. Это можно сделать либо с помощью ключевого слова <strong>in</strong>, либо с помощью функции <strong>find</strong>:</p> 
+  <pre><code>s = 'My Name is Julia'
+
+if 'Name' in s:
+    print('Substring found')
+
+index = s.find('Name')
+if index != -1:
+    print(f'Substring found at index {index}')</code></pre> 
+  <p>Попробуйте запустить этот код в интерпретаторе, чтобы понять разницу в подходах.</p> 
+  <p>Конструкция&nbsp;<code>'Name' in s</code> возвращает просто <strong>True</strong>&nbsp;или&nbsp;<strong>False</strong>, a <strong>find()</strong> возвращает индекс первого вхождения подстроки в строку и -1, если подстрока не найдена. Обычно в автотестах достаточно использовать <strong>in</strong>, потому что это&nbsp;более читабельный вариант.</p> 
+  <p>Например, для проверки того, что в текущем url содержится строка login:&nbsp;</p> 
+  <pre><code>assert "login" in browser.current_url, # сообщение об ошибке</code></pre> 
+  <p>Реализуйте подобную проверку самостоятельно.&nbsp;</p> 
+  <p>Вам дан шаблон для&nbsp;функции&nbsp;<samp><code>test_substring</code></samp>, которая принимает два значения:&nbsp;<strong>full_string</strong> и&nbsp;<strong>substring</strong>.&nbsp;</p> 
+  <p>Функция должна проверить вхождение строки&nbsp;<strong>substring</strong>&nbsp;в строку <strong>full_string&nbsp;</strong>с помощью оператора <strong>assert</strong>&nbsp;и, в случае несовпадения, предоставить исчерпывающее сообщение об ошибке.&nbsp;</p> 
+  <p><strong>Важно!</strong> Формат ошибки должен точно совпадать с приведенным в примере, чтобы его засчитала проверяющая система!&nbsp;</p> 
+  <p>Маленький совет: попробуйте воспользоваться кнопкой "Запустить код" и протестируйте ваш код на разных введенных значениях, проверьте вывод вашей функции на разных парах. Обрабатывать ситуацию с пустым или невалидным вводом не нужно.&nbsp;</p>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">fulltext some_value</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">expected 'some_value' to be substring of 'fulltext'</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 1</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight"></code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">some_text some</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight"></code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>

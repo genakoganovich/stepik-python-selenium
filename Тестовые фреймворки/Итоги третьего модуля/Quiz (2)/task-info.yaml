@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: фикстуры, описанные в файле conftest.py в корневой директории проекта, могут
+    вызываться в любом другом файле с тестами
+- text: фикстуры могут служить для подготовки и удаления данных
+- text: фикстура всегда запускается для каждого теста отдельно
+- text: фикстуры нужно явно вызывать в теле теста
+- text: 'любую фикстуру нужно передать как параметр в тестовую функцию, чтобы она
+    запустилась '
+- text: фикстуры могут возвращать какое-то значение
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

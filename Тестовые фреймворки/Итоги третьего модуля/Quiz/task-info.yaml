@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: маркировка тестов PyTest
+- text: создание фикстур PyTest
+- text: параметризация тестов
+- text: работа с Git/GitHub
+- text: сообщение об ошибках в тестах
+- text: создание фикстур unittest
+- text: 'структура HTML-документа '
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

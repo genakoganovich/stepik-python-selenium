@@ -1,0 +1,25 @@
+<html>
+ <head></head>
+ <body>
+  <h2>Первый тест на основе&nbsp;Page Object</h2> 
+  <p>Ура, первый прототип страницы мы уже реализовали! Давайте теперь перепишем тест с помощью Page Object:&nbsp;</p> 
+  <p>1. Откройте файл с вашим тестом&nbsp;<em>test_main_page.py</em></p> 
+  <p>2. В самом верху файла нужно импортировать класс, описывающий главную страницу:&nbsp;</p> 
+  <pre><code class="language-python">from .pages.main_page import MainPage</code></pre> 
+  <p>3. Теперь преобразуем сам тест в <em>test_main_page.py</em>:&nbsp;</p> 
+  <pre><code class="language-python">from .pages.main_page import MainPage
+
+
+def test_guest_can_go_to_login_page(browser):
+    link = "http://selenium1py.pythonanywhere.com/"
+    page = MainPage(browser, link)   # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес 
+    page.open()                      # открываем страницу
+    page.go_to_login_page()          # выполняем метод страницы — переходим на страницу логина</code></pre> 
+  <p>4. Убедитесь, что тест проходит, запустив его все той же командой:&nbsp;</p> 
+  <pre><code>pytest -v --tb=line --language=en test_main_page.py</code></pre> 
+  <p>5.&nbsp;Добавьте изменения и сделайте коммит (с осмысленным сообщением!)</p> 
+  <p>Теперь наш тест <strong>почти </strong>полностью написан в модном стиле Page Object! Почему <strong>почти&nbsp;</strong>— узнаете в следующих шагах.</p> 
+  <p>Обратите внимание на&nbsp; структуру файлов на данном этапе:&nbsp;</p> 
+  <p><img alt="" src="https://ucarecdn.com/b72c7bb8-0ed0-40af-8ad0-b444197247d7/"></p>
+ </body>
+</html>

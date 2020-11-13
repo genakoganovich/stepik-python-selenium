@@ -1,0 +1,37 @@
+<html>
+ <head></head>
+ <body>
+  <h2>Установка Python3 в&nbsp;macOS</h2> 
+  <p>Если вы используете другую ОС, то смело пропускайте этот шаг и переходите к следующему.</p> 
+  <p>Чтобы проверить установлен ли у вас Python3 в системе, в&nbsp;консоли введите команду python3 --version:</p> 
+  <pre><code class="language-bash">python3 --version
+Python 3.7.3</code></pre> 
+  <p>Если Python у вас уже есть в системе, убедитесь, что установлена версия 3.6 или выше, чтобы вы могли использовать все современные возможности языка. Если у вас более старая версия или вы получили сообщение 'command not found', установите последнюю&nbsp;версию Python&nbsp;с помощью инструкции приведенной ниже.</p> 
+  <p>Для установки Python3 в&nbsp;macOS воспользуйтесь инструкцией&nbsp;<a href="https://wsvincent.com/install-python3-mac/" rel="noopener noreferrer nofollow">https://wsvincent.com/install-python3-mac/</a>. Рекомендуем установить пакетный менеджер Homebrew, как указано в инструкции. С помощью него потом будет удобно устанавливать другие инструменты, нужные для разработки автотестов.</p> 
+  <p>После установки откройте&nbsp;окно терминала и создайте&nbsp;папку, где будут храниться наши виртуальные окружения, затем перейдите в созданную папку:</p> 
+  <pre><code>$ mkdir environments
+$ cd environments</code></pre> 
+  <p>Создадим виртуальное окружение с помощью команды&nbsp;python3:</p> 
+  <pre><code>$ python3 -m venv selenium_env</code></pre> 
+  <p>Активируем окружение:</p> 
+  <pre><code>$ source selenium_env/bin/activate</code></pre> 
+  <p>Если окружение активировано, то мы увидим в начале командной строки терминала название окружения в круглых скобках. Теперь мы можем устанавливать нужные нам пакеты и запускать скрипты для тестов, которые мы напишем:</p> 
+  <p style="text-align: center;"><img alt="" src="https://ucarecdn.com/56475ad1-4ac9-4f2d-95c6-deb4bc9c92a9/"></p> 
+  <p>Если понадобится выйти из нашего окружения, достаточно ввести команду deactivate:</p> 
+  <p style="text-align: center;"><img alt="" src="https://ucarecdn.com/a4578ace-a021-476e-a8d3-083be2d0cc99/-/crop/543x43/0,1/-/preview/"></p> 
+  <p>Обратите внимание, что после перезапуска терминала&nbsp;нужно будет снова активировать нужное окружение.</p> 
+  <p>Проверим, что мы можем ﻿﻿теперь использовать Python. Запустим интерпретатор Python&nbsp;и напишем собственную версию HelloWorld. В итоге мы должны увидеть вывод строки "Hello, Selenium!":</p> 
+  <pre><code class="language-bash">$ source selenium_env/bin/activate
+
+﻿(selenium_env) alekspog@xenial:~/environments$ python
+
+﻿&gt;&gt;&gt; print("Hello, Selenium!")
+
+Hello, Selenium</code></pre> 
+  <p>Теперь выйдем из интерпретатора:</p> 
+  <pre><code>&gt;&gt;&gt; exit()</code></pre> 
+  <p><img alt="" src="https://ucarecdn.com/ccde6a69-96db-4655-8154-338e9d39b67e/"></p> 
+  <p>Будьте внимательны: когда вы открываете новое окно терминала, нужно заново активировать виртуальное окружение.</p> 
+  <p>Теперь можете переходить к следующему шагу этого урока.</p>
+ </body>
+</html>

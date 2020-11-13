@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  <h2>Установка драйвера для браузера: macOS</h2> 
+  <p>При установке Python вы уже, скорее всего, установили пакетный менеджер Homebrew. Если нет, то рекомендуем сделать это сейчас, а затем с его помощью установить программу wget для загрузки файлов по сети.</p> 
+  <pre><code>brew install wget</code></pre> 
+  <p>Для установки драйвера откройте сайт <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" rel="nofollow noopener noreferrer"><span style="color: #0066cc;">https://sites.google.com/a/chromium.org/chromedriver/downloads</span></a> и скопируйте ссылку на ту версию ChromeDriver, которая соответствует&nbsp;версии вашего браузера. Чтобы узнать версию браузера, откройте новое окно в Chrome, в поисковой строке наберите: chrome://version/ —&nbsp;и нажмите Enter. В верхней строчке вы увидите информацию про версию браузера.</p> 
+  <pre><code>cd ~/Downloads
+wget https://chromedriver.storage.googleapis.com/76.0.3809.68/chromedriver_mac64.zip</code></pre> 
+  <p>Разархивируйте скачанный файл&nbsp;и переместите его в папку /usr/local/bin, чтобы он был глобально доступен в вашей системе.</p> 
+  <pre><code>unzip chromedriver_mac64.zip
+sudo mv chromedriver /usr/local/bin</code></pre> 
+  <p>Проверим, что нужная версия chromedriver установлена.</p> 
+  <pre><code>chromedriver --version</code></pre> 
+  <p>Мы должны увидеть ответ системы:</p> 
+  <pre><code>ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864})</code></pre> 
+  <p>В этом случае все хорошо, и можно переходить к следующему шагу.</p> 
+  <p>Если мы вдруг&nbsp;видим что-то вроде:</p> 
+  <pre><code>-bash: chromedriver: command not found</code></pre> 
+  <p>то необходимо проверить папку /usr/local/bin на наличие файла chromedriver. Если файла там нет, то нужно повторить команды, описанные выше.&nbsp;</p> 
+  <p>Переходите к шагу&nbsp;<a href="/lesson/25969/step/11" rel="noopener noreferrer nofollow">https://stepik.org/lesson/25969/step/11</a>, в котором мы&nbsp;запустим браузер с помощью Selenium WebDriver и выполним простые команды.</p>
+ </body>
+</html>

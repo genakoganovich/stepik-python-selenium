@@ -1,0 +1,21 @@
+type: theory
+custom_name: Theory
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+- name: lesson1_step2_hello_selenium.py
+  visible: true
+  learner_created: true
+- name: lesson1_step2_interpreter_python.py
+  visible: true
+  learner_created: true
+- name: lesson1_step2_web_browser_launch_first_script.py
+  visible: true
+  learner_created: true
+status: Solved
+record: -1
+post_submission_on_open: true

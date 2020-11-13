@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Выбор языка интерфейса
+- text: 'Регистрация нового пользователя '
+- text: Добавление в корзину
+- text: Поиск по сайту
+- text: Проверить цену продукта
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

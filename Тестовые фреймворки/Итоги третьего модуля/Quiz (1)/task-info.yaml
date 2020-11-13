@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: тест-раннеры позволяют запустить оставшиеся тесты, даже если один из них не
+    проходит из-за ошибки
+- text: unittest может запускать тесты, написанные  с помощью синтаксиса PyTest
+- text: чтобы тест-раннер смог запустить тесты, они обязательно должны быть вне классов
+- text: тестовые проверки в unittest делаются с помощью ключевого слова assert
+- text: PyTest позволяет запустить один тест несколько раз с изменяющимся параметром
+- text: PyTest позволяет запускать только один файл с тестами за раз
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

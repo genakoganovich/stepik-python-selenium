@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Паттерн Page Object позволяет хранить селекторы в одном месте, отдельно от
+    логики, что упрощает поддержку автотестов
+- text: Page Object классы нельзя наследовать друг от друга
+- text: Методы класса Page Object представляют собой только проверки состояния страницы
+- text: Page Object уменьшает временные затраты на поддержку автотестов
+- text: Без Page Object невозможно писать автотесты
+- text: Page Object это специальный класс, встроенный в стандартную библиотеку Python
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz
